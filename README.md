@@ -13,6 +13,33 @@ This project addresses the critical healthcare challenge of predicting 30-day ho
 - **Multi-Modal Fusion**: Bidirectional GRU + TF-IDF + Image features fusion model
 - **Comprehensive Analysis**: Full EDA, feature engineering, and model comparison
 
+## 📊 Dataset
+
+The dataset is from the [STAT 3612 Fall 2025 Group Project Competition](https://www.kaggle.com/competitions/2025-fall-stat-3612-group-project) on Kaggle.
+
+### Download Instructions
+
+**Option 1: Manual Download**
+1. Go to the [competition page](https://www.kaggle.com/competitions/2025-fall-stat-3612-group-project/data)
+2. Sign in to Kaggle (create an account if needed)
+3. Accept the competition rules
+4. Download and extract the data into `2025-fall-stat-3612-group-project/` folder
+
+**Option 2: Using Kaggle API**
+```bash
+# Install Kaggle API
+pip install kaggle
+
+# Set up authentication (download kaggle.json from your Kaggle account settings)
+mkdir -p ~/.kaggle
+mv ~/Downloads/kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+
+# Download the competition data
+kaggle competitions download -c 2025-fall-stat-3612-group-project
+unzip 2025-fall-stat-3612-group-project.zip -d 2025-fall-stat-3612-group-project/
+```
+
 ## Project Structure
 
 ```
